@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondaryVariant"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="263dp"
+        android:layout_height="243dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="-7dp"
+        android:layout_marginBottom="46dp"
+        app:srcCompat="@drawable/autos" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="sans-serif"
+        android:text="Bienvenidos..."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

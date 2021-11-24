@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Interfaz Usuario</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="btnConsultar">Consultar</string>
+    <string name="btnActualizar">Actualizar</string>
+    <string name="btnEliminar">Eliminar</string>
+</resources>

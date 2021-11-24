@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="?attr/colorSecondaryVariant"
+    android:orientation="vertical"
+    tools:context=".VehiculoActivity">
+
+    <EditText
+        android:id="@+id/txtPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:hint="Placa"
+        android:inputType="text"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/txtMarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:hint="Marca"
+        android:inputType="text"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/txtModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:hint="Modelo"
+        android:inputType="text"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/txtColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:hint="Color"
+        android:inputType="text"
+        android:textColor="@color/black" />
+    <EditText
+        android:id="@+id/txtCelda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:hint="Celda"
+        android:inputType="text"
+        android:textColor="@color/black" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Propietario"
+        android:backgroundTint="@color/cardview_light_background"/>
+
+    <Spinner
+        android:id="@+id/comboPropietario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Registrar"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="Consultar"
+            android:text="Consultar"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="Actualizar"
+            android:text="Actualizar"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:onClick="Eliminar"
+            android:text="Eliminar"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Menú"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Salir"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
