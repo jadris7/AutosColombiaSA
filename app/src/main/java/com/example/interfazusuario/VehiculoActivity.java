@@ -155,6 +155,7 @@ public class VehiculoActivity extends AppCompatActivity {
             color.setText(respuesta.getString(2));
             idCelda.setText(respuesta.getString(3));
            // idPropietario.setText(respuesta.getString(4));
+            db.close();
         }catch (Exception e){
             Toast.makeText(getApplicationContext(), "El vehículo no existe", Toast.LENGTH_LONG).show();
             placa.setText("");
