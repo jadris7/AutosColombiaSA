@@ -44,24 +44,27 @@
                 android:background="@android:color/darker_gray"
                 android:gravity="center"
                 android:padding="10dp"
+                android:id="@+id/btnA1"
                 android:text="A1" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="1dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/btn_color"
                 android:gravity="center"
                 android:padding="10dp"
+                android:id="@+id/btnA2"
                 android:text="A2" />
 
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="1dp"
-                android:background="@android:color/darker_gray"
                 android:gravity="center"
                 android:padding="10dp"
+                android:background="@android:color/darker_gray"
+                android:id="@+id/btnA3"
                 android:text="A3" />
 
             <Button
@@ -71,6 +74,7 @@
                 android:background="@android:color/darker_gray"
                 android:gravity="center"
                 android:padding="10dp"
+                android:id="@+id/btnA4"
                 android:text="A4" />
 
             <Button
@@ -86,7 +90,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="1dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/btn_color"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="A6" />
@@ -141,7 +145,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="1dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/btn_color"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="B5" />
@@ -178,7 +182,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_margin="1dp"
-                android:background="@android:color/darker_gray"
+                android:background="@drawable/btn_color"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="C2" />
@@ -315,6 +319,27 @@
             android:text="Menú"
             android:textColor="@color/black"
             android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Celdas Ocupadas"
+            android:textColor="@color/black" />
+
     </LinearLayout>
 
 </LinearLayout>

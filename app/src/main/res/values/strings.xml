@@ -4,4 +4,15 @@
     <string name="btnConsultar">Consultar</string>
     <string name="btnActualizar">Actualizar</string>
     <string name="btnEliminar">Eliminar</string>
+
+    <string-array name="mes">
+        <item>Seleccione el mes a pagar</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="novedad">
+        <item>Seleccione el mes a pagar</item>
+        <item>Ingreso</item>
+        <item>Salida</item>
+    </string-array>
 </resources>
