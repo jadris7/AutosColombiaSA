@@ -10,7 +10,7 @@ import android.widget.Button;
 public class CeldaActivity extends AppCompatActivity {
 
     String Title = "Gestión de Celdas";
-    Button Regresar, Salir;
+    Button Regresar, Salir, habilitar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
