@@ -1,5 +1,7 @@
 package com.example.interfazusuario.utilidades;
 
+import java.util.Date;
+
 public class Utilidades {
 
 
@@ -61,4 +63,48 @@ public class Utilidades {
             +TABLA_CELDA + " ("
             +CAMPO_IDCELDA+" TEXT PRIMARY KEY, "
             +CAMPO_NOMBRE_CELDA+" TEXT)";
+
+    //Constantes campos tabla Pago
+    public static final String TABLA_PAGO = "pago";
+    public static final String CAMPO_IDPAGO = "idPago";
+    public static final String CAMPO_PLACA = "placa";
+    public static final String CAMPO_ID_PROPIET = "idPropietario";
+    public static final String CAMPO_NOMBRE_PROPIETARIO = "NombrePropietario";
+    public static final String CAMPO_FECHA_PAGO = "fechaPago";
+    public static final String CAMPO_MES_PAGADO = "MesPagado";
+    public static final String CAMPO_VALOR = "valor";
+
+    public static final String CREAR_TABLA_PAGO= "CREATE TABLE "
+            +TABLA_PAGO + " ("
+            +CAMPO_IDPAGO+" INTEGER PRIMARY KEY AUTOINCREMENT, "
+            +CAMPO_PLACA+" TEXT NOT NULL, "
+            +CAMPO_ID_PROPIET+" TEXT , "
+            +CAMPO_NOMBRE_PROPIETARIO+" TEXT, "
+            +CAMPO_FECHA_PAGO+" DATE , "
+            +CAMPO_MES_PAGADO+" TEXT , "
+            +CAMPO_VALOR+" DOUBLE)";
+
+    //Constantes campos tabla Ingreso
+    public static final String TABLA_INGRESO = "ingreso";
+    public static final String CAMPO_IDPLACAING = "idPlaca";
+    public static final String CAMPO_FECHAING = "fecha";
+    public static final String CAMPO_COMENTARIOING = "comentario";
+
+    public static final String CREAR_TABLA_INGRESO="CREATE TABLE "
+            +TABLA_INGRESO + " ("
+            +CAMPO_IDPLACAING+" TEXT PRIMARY KEY, "
+            +CAMPO_FECHAING+" INTEGER , "
+            +CAMPO_COMENTARIOING+" TEXT)";
+
+    //Constantes campos tabla Salida
+    public static final String TABLA_SALIDA = "salida";
+    public static final String CAMPO_IDPLACASAL = "idPlaca";
+    public static final String CAMPO_FECHASAL = "fecha";
+    public static final String CAMPO_COMENTARIOSAL = "comentario";
+
+    public static final String CREAR_TABLA_SALIDA="CREATE TABLE "
+            +TABLA_SALIDA + " ("
+            +CAMPO_IDPLACASAL+" TEXT PRIMARY KEY, "
+            +CAMPO_FECHASAL+" INTEGER , "
+            +CAMPO_COMENTARIOSAL+" TEXT)";
 }

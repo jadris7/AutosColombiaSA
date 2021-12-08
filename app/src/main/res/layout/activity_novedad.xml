@@ -4,21 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:background="?attr/colorSecondaryVariant"
     android:orientation="vertical"
-    tools:context=".MenuActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".NovedadActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="189dp"
+        android:layout_height="121dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="368dp"
-            android:layout_height="183dp"
+            android:layout_width="379dp"
+            android:layout_height="118dp"
             android:layout_above="@+id/textView"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
@@ -27,8 +27,61 @@
             android:layout_marginBottom="46dp"
             android:textAlignment="center"
             app:srcCompat="@drawable/autos" />
+
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/txtPlaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cardview_light_background"
+        android:hint="Placa"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtTituloFecha"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="Fecha y Hora"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint=""
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:hint="Observaciones"
+            android:id="@+id/txtComentario"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,26 +90,25 @@
         android:textAlignment="center">
 
         <Button
-            android:id="@+id/btnCliente"
-            android:layout_width="135dp"
+            android:id="@+id/btnIngreso"
+            android:layout_width="131dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="@android:color/darker_gray"
-            android:text="PROPIETARIOS"
+            android:text="Ingreso"
             android:textColor="@color/black"
-            android:textSize="12sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnVehiculos"
-            android:layout_width="135dp"
+            android:id="@+id/btnSalida"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="@android:color/darker_gray"
-            android:text="Vehiculos"
+            android:layout_marginHorizontal="10dp"
+            android:text="Salida"
             android:textColor="@color/black"
-            android:textSize="12sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -65,58 +117,56 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:textAlignment="center">
-
-        <Button
-            android:id="@+id/btnNovedad"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@android:color/darker_gray"
-            android:text="Novedad"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnPago"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@android:color/darker_gray"
-            android:text="Pagos"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:textAlignment="center">
-
-        <Button
-            android:id="@+id/btnGestionCelda"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="10dp"
-            android:backgroundTint="@android:color/darker_gray"
-            android:text="Celdas"
-            android:textColor="@color/black"
-            android:textSize="12sp"
-            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnRegresar"
-            android:layout_width="135dp"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             android:backgroundTint="@android:color/darker_gray"
-            android:text="Login"
+            android:text="Menú"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Salir"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Consultar Entradas"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnConsultarSalida"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="Consultar Salidas"
+            android:textColor="@color/black"
             android:textStyle="bold" />
 
     </LinearLayout>

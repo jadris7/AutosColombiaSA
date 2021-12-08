@@ -48,6 +48,16 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) { IngresarCelda(); }
         });
 
+        IngresarPagos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { IngresarPago(); }
+        });
+
+        IngresarNovedad.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { IngresarNovedad(); }
+        });
+
     }
 
     public void IngresarCliente(){
@@ -64,6 +74,14 @@ public class MenuActivity extends AppCompatActivity {
     }
     public void IngresarCelda() {
         Intent intent = new Intent(this,CeldaActivity.class);
+        startActivity(intent);
+    }
+    public void IngresarPago() {
+        Intent intent = new Intent(this,PagoActivity.class);
+        startActivity(intent);
+    }
+    public void IngresarNovedad() {
+        Intent intent = new Intent(this,NovedadActivity.class);
         startActivity(intent);
     }
 }
